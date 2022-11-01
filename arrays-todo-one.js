@@ -25,16 +25,12 @@ console.log(popFront([ 0, 5, 10, 15 ]))
 //Insert At 
 
 function insertAt(array, index, value) {
-    array.push(value);
-    console.log(array);//100, 200, 5, 311
-    temp = array[ index ]//5
-    array[ array.length - 1 ] = value//311
+    array.push(array[ index ])
     array[ index ] = value;
-    array[ array.length - 1 ] = temp;
-    return (array)
+    return (console.log(array))
 }
 
-insertAt([ 100, 200, 5 ], 2, 311)
+inserAt([ 100, 200, 5 ], 2, 311)
 
 
 
